@@ -9,13 +9,15 @@ const getAll = () => {
 }
 
 const getOne = (params) => {
+console.log('pppppp', params)
+  
   let errors = []
   let id = params.id
   let posts = fs.readFileSync(postsPath, 'utf-8')
   let postsArr = JSON.parse(posts)
   let postFound = postsArr.find(post => post.id === id)
   let response 
-
+console.log('ffffff', postFound)
   if(postFound) {
     response = postFound
   } else {
@@ -26,6 +28,7 @@ const getOne = (params) => {
 }
 
 const create = (body) => {
+  console.log('bbbb', body)
   let errors = []
   let title = body.title
   let content = body.content

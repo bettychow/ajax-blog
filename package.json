@@ -1,0 +1,33 @@
+{
+  "name": "ajax-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "mecha-js": "^0.1.4",
+    "morgan": "^1.9.0",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bettychow/ajax-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bettychow/ajax-blog/issues"
+  },
+  "homepage": "https://github.com/bettychow/ajax-blog#readme"
+}

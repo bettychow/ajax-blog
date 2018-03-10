@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: purple;
+  color: white; 
+}
+
+.blog {
+  display: flex;
+  flex-direction: row;
+}
+
+#title-input {
+  display: block;
+}
+
+#content-input {
+  display: block;
+}
+
+#list {
+  min-width: 30%;
+}
+
+#nav-bar li { 
+  list-style-type: none; 
+} 
+
+li {
+  border: solid grey;
+  border-width: thin;
+  width: 50%;
+}
+
+div input[type=text] {
+  display: none;
+}
+
+div.editMode input[type=text] {
+  display: block;
+}
+
+div.editMode .title {
+  display: none;
+}
+
+div.editMode .content {
+  display: none;
+}
+
+div.editMode #edit-button {
+  display: none;
+}
+
+div.editMode #delete-button {
+  display: none;
+}
+
+#title-text {
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#content-text {
+  display: block;
+}
