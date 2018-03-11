@@ -1,11 +1,14 @@
 .container {
   display: flex;
   flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .header {
-  background-color: purple;
+  background-color: #660066;
   color: white; 
+  padding: 30px;
+  padding-left: 40px;
 }
 
 .blog {
@@ -33,30 +36,9 @@ li {
   border: solid grey;
   border-width: thin;
   width: 50%;
-}
-
-div input[type=text] {
-  display: none;
-}
-
-div.editMode input[type=text] {
-  display: block;
-}
-
-div.editMode .title {
-  display: none;
-}
-
-div.editMode .content {
-  display: none;
-}
-
-div.editMode #edit-button {
-  display: none;
-}
-
-div.editMode #delete-button {
-  display: none;
+  padding: 2px;
+  padding-left: 10px;
+  cursor: pointer;
 }
 
 #title-text {

@@ -16,12 +16,17 @@ const getOne = (req, res) => {
 
 const create = (req, res) => {
   const data = model.create(req.body)
+  if(data.errors) {
+    return next({status: 400, messsage: 'Cannot create post', errors: data.errors })
+  }
   res.status(201).json(data)
 }
 
 const update = (req, res) => {
-  console.log('uuuuuu', req.params, req.body)
   const data = model.update(req.params, req.body)
+  if(data.errors) {
+    return next({status: 400, messsage: 'Cannot update post', errors: data.errors })
+  }
   res.status(200).json({ data })
 }
 
