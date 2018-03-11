@@ -18,10 +18,13 @@
 
 #title-input {
   display: block;
+  width: 200px;
 }
 
 #content-input {
   display: block;
+  width: 200px;
+  height: 200px;
 }
 
 #list {
@@ -49,4 +52,8 @@ li {
 
 #content-text {
   display: block;
+}
+
+.post {
+  margin-top: 10px;
 }
