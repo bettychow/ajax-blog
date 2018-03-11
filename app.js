@@ -15,7 +15,7 @@ app.use(bodyParser.json())
 app.use(cors())
 
 
-const postsRoutes = require('./src/routes/posts')
+const postsRoutes = require('./server/src/routes/posts')
 app.use('/posts', postsRoutes)
 
 
