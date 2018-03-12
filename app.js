@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 8000
+const path = require('path')
 const bodyParser = require('body-parser')
 const morgan = require('morgan')
 const cors = require('cors')
@@ -13,10 +14,15 @@ if(process.env.NODE_ENV === 'development' ) {
 
 app.use(bodyParser.json())
 app.use(cors())
+app.use(express.static(path.join(__dirname, 'public')))
 
 
 const postsRoutes = require('./server/src/routes/posts')
 app.use('/posts', postsRoutes)
+
+app.use('/', (req, res) => {
+  res.status(200).sendFile(path.join(__dirname + '/index.html'));
+})
 
 
 app.use((err, req, res, next) => {
