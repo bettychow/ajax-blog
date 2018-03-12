@@ -1,4 +1,4 @@
-let baseURL = 'https://salty-chamber-77736.herokuapp.com/'
+let baseURL = 'https://salty-chamber-77736.herokuapp.com'
 
 const currentPost = document.querySelector('#current-post')
 const navBar = document.querySelector('#nav-bar')
