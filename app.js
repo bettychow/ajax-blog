@@ -20,9 +20,9 @@ app.use(express.static(path.join(__dirname, 'public')))
 const postsRoutes = require('./server/src/routes/posts')
 app.use('/posts', postsRoutes)
 
-app.use('/', (req, res) => {
-  res.status(200).sendFile(path.join(__dirname + '/index.html'));
-})
+// app.use('/', (req, res) => {
+//   res.status(200).sendFile(path.join(__dirname + '/index.html'));
+// })
 
 
 app.use((err, req, res, next) => {
